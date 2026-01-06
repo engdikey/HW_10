@@ -1,0 +1,65 @@
+    1  history -c && rm ~/.zsh_history\n
+    2  echo $SHELL\n
+    3  history -c && rm ~/.zsh_history\n
+    4  rm ~/.zsh_history\n
+    5  history -p\n
+    6  git config --global user.name "Denis Kriachok"\n
+    7  git config --global user.email "engdikey@gmail.com"
+    8  git config --global --list\n
+    9  cd git
+   10  git config --global --list\n
+   11  cd git
+   12  clear
+   13  desktop
+   14  cd desktop
+   15  ls
+   16   cd desktop
+   17  ls
+   18  pwd
+   19  mkdir Git
+   20  cd Git
+   21  pwd
+   22  cd .. 
+   23  cd Git
+   24  Git clone https://github.com/engdikey/HW_10.git
+   25  cd touch text_ignore.txt
+   26  git status
+   27  cd HW_10
+   28  git status
+   29  touch text_ignore.txt
+   30  ls
+   31  nano .gitignore\n
+   32  git status
+   33  git status
+   34  git add .gitignore\n
+   35  git status
+   36  git commit -m "Add text_ignore.txt to .gitignore"\n
+   37  git status
+   38  git status\n
+   39  git add .\n
+   40  git status\n
+   41  git commit -m "Index all changes"\n
+   42  git commit -m "New file created"
+   43  git status
+   44  touch main_test.txt\n
+   45  ls
+   46  git add .\n
+   47  git status\n
+   48  git commit -m "Create empty main_test.txt"\n
+   49  git checkout -b develop\n
+   50  git branch\n
+   51  touch develop_test.txt\n
+   52  ls
+   53  git add .\n
+   54  git commit -m "Create empty develop_test.txt"\n
+   55  echo "just a small change" >> develop_test.txt\n
+   56  git status\n
+   57  git add .\n
+   58  git status\n
+   59  git commit -m "Add a small change to develop_test.txt"\n
+   60  git status\n
+   61  git checkout main\n
+   62  git checkout main\ngit branch\n
+   63  git branch\n
+   64  git merge develop\n
+   65  git log --oneline --graph --all\n
